@@ -1,6 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Baskerville&family=Stylish&display=swap');
 body{
-    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    z-index: 1;
+    margin-top: 0;
+    height: auto;
     display: flex;
-    justify-content: center;
+    background-image: url(images_section/header_bg.jpeg);
+}
+.coloring_div{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    margin-top: -21px;
+    height: 70vh;
+    width: 60vw;
+    border-top-right-radius: 280px;
+    border-bottom-right-radius: 280px;
+    background: linear-gradient(135deg, rgb(11, 23, 136), rgb(58, 232, 255));
+    transition: height, width, 0.5s ease;
+}
+.coloring_div:hover{
+    height: 73vh;
+    width: 63vw;
+}
+.coloring_div::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #24c6dc, #514a9d);
+    opacity: 0;
+    border-top-right-radius: 280px;
+    border-bottom-right-radius: 280px;
+
+    transition: opacity, border-top-right-radius, border-bottom-right-radius, 0.5s ease;
+}
+.coloring_div:hover::before{
+    opacity: 1;
+    border-top-right-radius: 280px;
+    border-bottom-right-radius: 280px;
+}
+.heading_nuclear_energy{
+    position: relative;
+    color: white; 
+    margin-left: 33vw; 
+    margin-right: 10px; 
+    font-size: 40px; 
+    font-family: Google Sans; 
+    letter-spacing: 3px; 
+    font-weight: 20px;
+    transition: margin-bottom, margin-right, color, 0.4s ease;
+}
+.heading_nuclear_energy:hover{
+    margin-bottom: 40px;
+    margin-right: 18px;
+    color: orange;
+}
+.heading_nuclear_energy::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: orange;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.heading_nuclear_energy:hover::after{
+    transform: scaleX(1);
+}
+.heading_and{
+    position: relative;
+    color: white; 
+    margin-top: -25px; 
+    margin-left: 52vw; 
+    font-family: Libre Baskerville, serif;
+    font-weight: 30px;
+    transition: color, margin-right, 0.3s ease;
+}
+.heading_and:hover{
+    margin-right: 20px;
+    color: orange;
+}
+.heading_and::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: orange;
+
+    border-radius: 20px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.heading_and:hover::after{
+    transform: scaleX(1);
+}
+.heading_physics{
+    position: relative;
+    color: white;
+    margin-left: 45vw; 
+    margin-right: 10px; 
+    margin-top: -28px;
+    font-size: 40px; font-family: 
+    Google Sans; 
+    letter-spacing: 3px; 
+    font-weight: 20px;
+
+    transition: margin-right, margin-top, color, 0.4s ease;
+}
+.heading_physics:hover{
+    margin-right: 18px;
+    margin-top: -18px;
+    color: orange;
+}
+.heading_physics::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: orange;
+    border-radius: 20px;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.heading_physics:hover::after{
+    transform: scaleX(1);
 }
