@@ -54,7 +54,7 @@ body{
     color: white; 
     margin-left: 33vw; 
     margin-right: 10px; 
-    font-size: 40px; 
+    font-size: 35px; 
     font-family: Google Sans; 
     letter-spacing: 3px; 
     font-weight: 20px;
@@ -145,4 +145,11 @@ body{
 }
 .heading_physics:hover::after{
     transform: scaleX(1);
+}
+.nuclear_game_link{
+    color: rgb(253, 236, 83);
+    font-family: initial;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: -15px;
 }
