@@ -5,6 +5,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 .header{
     z-index: 1;
@@ -18,11 +19,10 @@ body{
     background-image: url(images_section/header_bg.jpeg);
     background-attachment: fixed;
 
-    transition: transform, margin-bottom, 0.5s ease;
+    transition: background-position 0.5s ease;
 }
 .header:hover{
-    transform: translateY(-4vh);
-    margin-bottom: 4vh;
+    background-position: 0% 20%;  /*the left % controls the x-axis position and right one controls the y-axis position*/
 }
 .coloring_div{
     z-index: 2;
@@ -163,4 +163,10 @@ body{
     font-style: italic;
     font-size: 20px;
     margin-top: -15px;
+}
+.shadow_gradiant{
+    margin-top: 0px;
+    height: 12vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 10%, rgba(0, 0, 0, 1) 90%);
 }
