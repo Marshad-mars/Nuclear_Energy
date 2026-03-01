@@ -165,8 +165,40 @@ body{
     margin-top: -15px;
 }
 .shadow_gradiant{
+    z-index: 1;
+    position: absolute;
     margin-top: 0px;
     height: 12vh;
     width: 100vw;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 10%, rgba(0, 0, 0, 1) 90%);
 }
+.insp_div{
+    z-index: 1;
+    position: relative;
+    margin-top: 15vh;
+}
+.insp_state{
+    color: transparent;
+    font-family: Google Sans;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-bottom: 10vh;
+
+    text-transform: initial;
+    background: linear-gradient(
+        to right,
+        red, orange, yellow, orange, red
+    );
+    background-size: 200%;  /*it adjusts the linear gradiant color transition while there are multiple colors*/
+    background-clip: text;  /*it decides, where the bg-color or image is allowed to appear inside of an element*/
+    -webkit-background-clip: text;
+    animation: insp_animation 2s linear infinite;
+}
+@keyframes insp_animation{  /*gives the animatory function to the respective animation*/
+    to{
+        background-position: 200%;
+    }
+}
+
+
+/*every elements are composed of 3 layers, border-> padding-> content*/
