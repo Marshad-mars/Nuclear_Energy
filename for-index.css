@@ -64,7 +64,7 @@ body{
     position: relative;
     color: white; 
     margin-left: 33vw; 
-    margin-right: 10px; 
+    /* margin-right: 10px;  */
     font-size: 35px; 
     font-family: Google Sans; 
     letter-spacing: 3px; 
@@ -175,9 +175,13 @@ body{
 .insp_div{
     z-index: 1;
     position: relative;
-    margin-top: 15vh;
+    display: flex;
+    height: auto;
+    width: 100vw;
 }
 .insp_state{
+    margin-top: 15vh;
+    position: absolute;
     color: transparent;
     font-family: Google Sans;
     margin-left: 15vw;
@@ -199,6 +203,20 @@ body{
         background-position: 200%;
     }
 }
-
+.decorate_1{
+    position: relative;
+    height: 250px; 
+    padding-left: 1vw; 
+    margin-bottom: 7vh;
+    transition: height 0.3s ease;
+}
+.decorate_1:hover{
+    height: 260px;
+}
+.decorate_2{
+    height: 170px;
+    position: absolute;
+    right: 9vw;
+}
 
 /*every elements are composed of 3 layers, border-> padding-> content*/
