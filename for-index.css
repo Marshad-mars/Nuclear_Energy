@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Baskerville&family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');  /*Runik vinyll*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');  /*Libre Baskerville*/
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Baskerville&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stylish&display=swap');  /*poppins*/
 body{
     margin: 0;
     padding: 0;
@@ -225,7 +224,7 @@ body{
 .decorate_3{
     height: 130px;
     position: absolute;
-    right: 15vw;
+    right: 24vw;
     top: 25vh;
     transition: height 0.3s ease;
 }
@@ -235,9 +234,10 @@ body{
 .about{
     z-index: 1;
     position: relative;
-    margin-top: -5vh;
+    margin-top: -4vh;
     border-radius: 20px;
     height: auto;
+    width: 100vw;
 
     background-color: white;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images_section/mars_theme_bg.jpeg);
@@ -248,7 +248,8 @@ body{
     color: transparent;
     font-family: Google Sans;
     font-size: 50px;
-    padding-left: 4vw;
+    padding-left: 11vw;
+    width: 40vw;
     
     background: linear-gradient(to right, rgb(255, 217, 0), rgb(255, 72, 0), yellow);
     background-clip: text;
@@ -267,19 +268,66 @@ body{
     }
 }
 .about_heading::after{
-    content: "";
-    position: relative;
+    content: "this webworld and it's motive";
+    position: absolute;
     color: rgb(0, 207, 0);
     font-size: 20px;
     font-family: Libre Baskerville;
     font-style: italic;
     font-weight: 100;
+    bottom: 8px;
 
-    transform-origin: right;
-    transition: content 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 .about_heading:hover::after{
-    content: "this webworld and it's motive";
+    transform: scaleX(1)
+}
+.about_description{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    margin-top: -15px;
+    height: auto;
+}
+.para_1{  
+    position: relative;
+    padding-left: 4vw;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: initial;
+    font-weight: 400;
+    font-size: 21px;
+}
+.para_1::before{
+    content: "";
+    position: absolute;
+    background-color: orange;
+    border-radius: 10px;
+    left: 2.5vw;
+    top: 0;
+    height: 100%;
+    width: 8px;
+}
+.para_2{
+    position: relative;
+    padding-left: 4vw;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: initial;
+    font-weight: 400;
+    font-size: 21px;
+}
+.para_2::before{
+    content: "";
+    position: absolute;
+    background-color: orange;
+    border-radius: 10px;
+    left: 2.5vw;
+    top: 0;
+    height: 100%;
+    width: 8px;
 }
 
 /*every elements are composed of 3 layers, border-> padding-> content*/
