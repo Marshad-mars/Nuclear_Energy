@@ -298,7 +298,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-style: initial;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 20px;
 }
 .para_1::before{
     content: "";
@@ -328,6 +328,11 @@ body{
     top: 0;
     height: 100%;
     width: 8px;
+}
+.u_style{  /*this is for all the corrosponding u elements*/
+    text-decoration: none; 
+    font-style: italic; 
+    color: yellow;
 }
 
 /*every elements are composed of 3 layers, border-> padding-> content*/
